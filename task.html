@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeslice</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .logout-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ff4d4d;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .logout-button:hover {
+            background-color: #cc0000;
+        }
+        .about-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff66b2; /* Changed to pink */
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .about-button:hover {
+            background-color: #cc338b; /* Darker pink for hover effect */
+        }
+    </style>
+</head>
+<body>
+    <a href="login.html" class="logout-button">Logout</a>
+    <a href="about.html" class="about-button">About</a>
+    <div class="container">
+        <h1>Timeslice</h1>
+        <input type="text" id="taskInput" placeholder="Add a new task...">
+        <select id="taskPriority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <button id="addTaskButton">Add Task</button>
+        <ul id="taskList"></ul>
+        <div id="timer">
+            <span id="timeDisplay">25:00</span>
+            <button id="startTimerButton">Start Timer</button>
+            <button id="resetTimerButton">Reset Timer</button>
+        </div>
+        <div>
+            <label for="pomodoroDuration">Pomodoro Duration (minutes):</label>
+            <input type="number" id="pomodoroDuration" value="25" min="1">
+            <label for="breakDuration">Break Duration (minutes):</label>
+            <input type="number" id="breakDuration" value="5" min="1">
+        </div>
+        <div id="stats">
+            <h3>Statistics</h3>
+            <p>Completed Pomodoros: <span id="completedCount">0</span></p>
+        </div>
