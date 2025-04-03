@@ -1,0 +1,140 @@
+body {
+    background-image: url('microindex.jpeg');
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Add this line to stack the login form and ABOUT US vertically */
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 50px; /* Increased padding */
+    width: 400px; /* Increased container width */
+    text-align: center;
+}
+
+.login-container h1 {
+    color: #333;
+    font-size: 72px; /* Increased font size for TIMESLICE */
+    margin-bottom: 30px; /* Increased margin */
+    font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+    font-weight: 700; /* Bold font weight */
+    letter-spacing: 3px; /* Increased letter-spacing */
+    margin-left: -40px; /* Moved the word TIMESLICE further to the left */
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    margin: 15px 0; /* Increased margin */
+    font-size: 18px; /* Increased font size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-field:focus {
+    border-color: #5e6db6;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #006400; /* Dark green color */
+    color: white;
+    border: none;
+    padding: 15px 20px; /* Increased padding */
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size */
+}
+
+.submit-btn:hover {
+    background-color: #004d00; /* Darker shade of green for hover effect */
+}
+
+.forgot-password {
+    font-size: 16px; /* Increased font size */
+    color: #777;
+    margin-top: 20px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #5e6db6;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.register-link {
+    font-size: 16px; /* Same font size as forgot password */
+    color: #777;
+    margin-top: 15px; /* Added some margin between login button and this link */
+}
+
+.register-link a {
+    text-decoration: none;
+    color: #006400; /* Green color for register link */
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* ABOUT US link color update */
+.ABOUT-US-link {
+    margin-top: 20px; /* Added margin to move it down */
+}
+
+.ABOUT-US-link a {
+    text-decoration: none;
+    color: #006400; /* Dark green color for ABOUT US link */
+}
+
+.ABOUT-US-link a:hover {
+    text-decoration: underline;
+}
+/* Example styling */
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
