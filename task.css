@@ -1,0 +1,179 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('homepic.jpeg'); 
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 2px solid #f8b0c4; /* Light baby pink border */
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #f8a3b8; /* Slightly darker light pink when focused */
+    outline: none;
+}
+
+.add-task {
+    width: 100%;
+    background: linear-gradient(90deg, #f8b0c4, #f9a1b1); /* Light baby pink gradient */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.add-task:hover {
+    background: linear-gradient(90deg, #f7a0b5, #f89bb4); /* Darker baby pink gradient on hover */
+    transform: scale(1.05);
+}
+
+#timer {
+    background: linear-gradient(135deg, #f8b0c4, #f9a1b1); /* Light baby pink gradient */
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#timeDisplay {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.timer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.timer-buttons button {
+    flex: 1;
+    background: linear-gradient(90deg, #f8b0c4, #f9a1b1); /* Light baby pink gradient */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    max-width: 130px;
+}
+
+.timer-buttons button:hover {
+    background: linear-gradient(90deg, #f7a0b5, #f89bb4); /* Darker pink gradient on hover */
+    transform: scale(1.05);
+}
+
+.timer-buttons .reset {
+    background: linear-gradient(90deg, #f9a1b1, #f8b0c4); /* Slightly different baby pink for reset */
+}
+
+.timer-buttons .reset:hover {
+    background: linear-gradient(90deg, #f7a0b5, #f9a1b1);
+}
+
+.duration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f8b0c4; /* Light baby pink border for number input */
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #f8a3b8; /* Darker light pink border on focus */
+    outline: none;
+}
+
+#stats {
+    background: linear-gradient(135deg, #f8b0c4, #f9a1b1); /* Light baby pink gradient */
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+}
+
+#stats h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#stats p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .timer-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    #timeDisplay {
+        font-size: 40px;
+    }
+}
