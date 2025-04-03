@@ -1,0 +1,60 @@
+body {
+    background-image: url('microindex.jpeg'); 
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 20px; /* Increased base font size */
+}
+
+.container {
+    background-color: white;
+    padding: 30px; /* Increased padding */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Increased width */
+    font-size: 18px; /* Increased font size for the container */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; /* Increased font size of the heading */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased spacing between form groups */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px; /* Increased space between label and input */
+    font-size: 18px; /* Increased label font size */
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="number"], select {
+    width: 100%;
+    padding: 12px; /* Increased padding inside input fields */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Increased font size inside input fields */
+}
+
+input[type="submit"] {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 15px 20px; /* Increased padding */
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size of the button */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
