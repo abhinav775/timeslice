@@ -1,121 +1,142 @@
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background-image: url('homepic.jpeg'); 
-    background-size: cover; 
-    background-position: center;
+    background-image: url('microindex.jpeg');
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
+    flex-direction: column; /* Add this line to stack the login form and ABOUT US vertically */
 }
 
-.container {
-    background-color: rgba(255, 255, 255, 0.8); 
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    width: 450px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 26px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-input[type="text"], select {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 12px;
-    border: 2px solid #d1a3ff;
+.login-container {
+    background-color: white;
     border-radius: 8px;
-    font-size: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 50px; /* Increased padding */
+    width: 400px; /* Increased container width */
     text-align: center;
-    transition: border-color 0.3s ease;
 }
 
-input[type="text"]:focus, select:focus {
-    border-color: #9c27b0;
+.login-container h1 {
+    color: #333;
+    font-size: 72px; /* Increased font size for TIMESLICE */
+    margin-bottom: 30px; /* Increased margin */
+    font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+    font-weight: 700; /* Bold font weight */
+    letter-spacing: 3px; /* Increased letter-spacing */
+    margin-left: -40px; /* Moved the word TIMESLICE further to the left */
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    margin: 15px 0; /* Increased margin */
+    font-size: 18px; /* Increased font size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-field:focus {
+    border-color: #5e6db6;
     outline: none;
 }
 
-.add-task {
-    width: 100%;
-    background: linear-gradient(90deg, #ff7043, #ff9800);
+.submit-btn {
+    background-color: #006400; /* Dark green color */
     color: white;
-    padding: 12px;
     border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    font-weight: bold;
-}
-
-.add-task:hover {
-    background: linear-gradient(90deg, #e65100, #ff7043);
-    transform: scale(1.05);
-}
-
-#timer {
-    background: linear-gradient(135deg, #42a5f5, #1976d2);
-    padding: 25px;
-    border-radius: 15px;
-    margin: 20px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-}
-
-#timeDisplay {
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.timer-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
+    padding: 15px 20px; /* Increased padding */
     width: 100%;
-}
-
-.timer-buttons button {
-    flex: 1;
-    background: linear-gradient(90deg, #8bc34a, #66bb6a);
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
-    font-weight: bold;
-    max-width: 130px;
+    font-size: 18px; /* Increased font size */
 }
 
-.timer-buttons button:hover {
-    background: linear-gradient(90deg, #558b2f, #8bc34a);
-    transform: scale(1.05);
+.submit-btn:hover {
+    background-color: #004d00; /* Darker shade of green for hover effect */
 }
 
-.timer-buttons .reset {
-    background: linear-gradient(90deg, #ff9800, #f57c00);
+.forgot-password {
+    font-size: 16px; /* Increased font size */
+    color: #777;
+    margin-top: 20px;
 }
 
-.timer-buttons .reset:hover {
-    background: linear-gradient(90deg, #e65100, #ff9800);
+.forgot-password a {
+    text-decoration: none;
+    color: #5e6db6;
 }
 
-.duration {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
+.forgot-password a:hover {
+    text-decoration: underline;
 }
+
+.register-link {
+    font-size: 16px; /* Same font size as forgot password */
+    color: #777;
+    margin-top: 15px; /* Added some margin between login button and this link */
+}
+
+.register-link a {
+    text-decoration: none;
+    color: #006400; /* Green color for register link */
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* ABOUT US link color update */
+.ABOUT-US-link {
+    margin-top: 20px; /* Added margin to move it down */
+}
+
+.ABOUT-US-link a {
+    text-decoration: none;
+    color: #006400; /* Dark green color for ABOUT US link */
+}
+
+.ABOUT-US-link a:hover {
+    text-decoration: underline;
+}
+/* Example styling */
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
