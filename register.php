@@ -3,6 +3,10 @@ $servername = "localhost";
 $username = "root"; 
 $password = ""; 
 $database = "timeslice";
+$servername = "sql102.infinityfree.com";
+$username = "if0_39269141"; 
+$password = "timeslice1234"; 
+$database = "if0_39269141_timeslice";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
